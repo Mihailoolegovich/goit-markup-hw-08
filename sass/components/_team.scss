@@ -14,13 +14,13 @@
     line-height: 1.2;
   }
 
-  &__cards {
-    display: flex;
-  }
-
-  &__summary:not(:last-child) {
-    margin-right: 30px;
-  }
+  // &__cards {
+  //   display: flex;
+  // }
+  //
+  // &__summary:not(:last-child) {
+  //   margin-right: 30px;
+  // }
 
   &__summary {
     box-shadow: $shadow-cards-index;

@@ -5,14 +5,16 @@
 }
 
 .credo {
-  display: flex;
+  // display: flex;
 
-  &__cards:not(:last-child) {
-    margin-right: 30px;
-  }
+  // &__cards:not(:last-child) {
+  //   margin-right: 30px;
+  // }
 
   &__cards {
-    width: 270px;
+    margin: 0 auto;
+    max-width: 450px;
+    // width: 270px;
     /* height: 101px;*/
   }
 

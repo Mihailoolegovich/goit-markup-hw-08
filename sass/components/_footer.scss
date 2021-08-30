@@ -1,14 +1,15 @@
 //    Footer
 
 .footer {
+  width: 100%;
   background-color: $background-color;
   padding: 60px 0;
 }
 
-.container__footer {
-  display: flex;
-  align-items: baseline;
-}
+// .container__footer {
+//   display: flex;
+//   align-items: baseline;
+// }
 
 .nav__site--footer {
   display: block;
@@ -55,8 +56,8 @@
 //      Invitation
 
 .invitation {
-  margin-left: 70px;
-  align-items: baseline;
+  // margin-left: 70px;
+  // align-items: baseline;
 
   &__title {
     margin-bottom: 20px;
@@ -71,7 +72,7 @@
 
 //     Social
 .social {
-  display: flex;
+  // display: flex;
 
   &__link:not(:last-child) {
     margin-right: 10px;
@@ -98,8 +99,8 @@
 //      Form-footer
 
 .form-footer {
-  margin-left: 93px;
-  align-items: baseline;
+  // margin-left: 93px;
+  // align-items: baseline;
   width: 570px;
 
   &__title {
@@ -113,7 +114,7 @@
   }
 
   &__subscrib {
-    display: flex;
+    // display: flex;
     align-items: baseline;
   }
 
@@ -126,7 +127,7 @@
   padding-left: 16px;
   margin-right: 12px;
   height: 50px;
-  width: 100%;
+  // width: 100%;
   background-color: $background-color;
   border: 1px solid $border-color;
   border-radius: 4px;

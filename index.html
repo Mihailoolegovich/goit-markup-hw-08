@@ -103,7 +103,7 @@
               <textarea class="form-modal__input form-modal__input--textarea " name="comment" rows="10"
                 placeholder="Введите текст"></textarea>
             </label>
-              <!-- Checkbox -->
+            <!-- Checkbox -->
             <label class="checkbox">
               <input class="checkbox__input" type="checkbox" name="contract">
               <span class="checkbox__icon"></span>
@@ -172,19 +172,41 @@
         <ul class="collage">
           <li class="collage__img">
             <div class="collage__cart">
-              <img src="./images/index_img/black_screen.jpg" alt="Черный монитор" width="370" height="294">
+              <picture>
+                <source media="(min-width: 1200px)" srcset='images/index_img/for_desktop/webp/1x/black_screen_370x294@1x.webp 1x, 
+                  images/index_img/for_desktop/webp/2x/black_screen_740x588@2x.webp 2x' type="image/webp">
+                <source media="(min-width: 1200px)" srcset='images/index_img/for_desktop/jpg/1x/black_screen_370x294@1x.jpg 1x, 
+                  images/index_img/for_desktop/jpg/2x/black_screen_740x588@2x.jpg 2x'>
+                <img src="images/index_img/for_desktop/jpg/1x/black_screen_370x294@1x.jpg">
+              </picture>
+              <!-- <img src="./images/index_img/for_desktop/webp/2x/black_screen_740x588@2x.webp" > -->
+              <!-- <img src="./images/index_img/black_screen.jpg" alt="Черный монитор" width="370" height="294"> -->
               <h3 class="collage__signature">Десктопные приложения</h3>
             </div>
           </li>
           <li class="collage__img">
             <div class="collage__cart">
-              <img src="./images/index_img/two_screens.jpg" alt="Два монитора" width="370" height="294">
+              <picture>
+                <source media="(min-width: 1200px)" srcset='images/index_img/for_desktop/webp/1x/two_screens_370x294@1x.webp 1x, 
+                  images/index_img/for_desktop/webp/2x/two_screens_740x588@2x.webp 2x' type="image/webp">
+                <source media="(min-width: 1200px)" srcset='images/index_img/for_desktop/jpg/1x/two_screens_370x294@1x.jpg 1x, 
+                  images/index_img/for_desktop/jpg/2x/two_screens_740x588@2x.jpg 2x'>
+                <img src="images/index_img/for_desktop/jpg/1x/two_screens_370x294@1x.jpg">
+              </picture>
+              <!-- <img src="./images/index_img/two_screens.jpg" alt="Два монитора" width="370" height="294"> -->
               <h3 class="collage__signature">Мобильные приложения</h3>
             </div>
           </li>
           <li class="collage__img">
             <div class="collage__cart">
-              <img src="./images/index_img/the_tablet.jpg" alt="Планшет" width="370" height="294">
+              <picture>
+                <source media="(min-width: 1200px)" srcset='images/index_img/for_desktop/webp/1x/the_tablet_370x294@1x.webp 1x, 
+                  images/index_img/for_desktop/webp/2x/the_tablet_740x588@2x.webp 2x' type="image/webp">
+                <source media="(min-width: 1200px)" srcset='images/index_img/for_desktop/jpg/1x/the_tablet_370x294@1x.jpg 1x, 
+                  images/index_img/for_desktop/jpg/2x/the_tablet_740x588@2x.jpg 2x'>
+                <img src="images/index_img/for_desktop/jpg/1x/the_tablet_370x294@1x.jpg">
+              </picture>
+              <!-- <img src="./images/index_img/the_tablet.jpg" alt="Планшет" width="370" height="294"> -->
               <h3 class="collage__signature">Дизайнерские решения</h3>
             </div>
           </li>
@@ -197,7 +219,22 @@
         <h2 class="team__title">Наша команда</h2>
         <ul class="team__cards">
           <li class="team__summary">
-            <img src="./images/index_img/Igor_Demyanenko.jpg" alt="Игорь Демьяненко" width="270" height="260">
+            <picture>
+              <source media="(max-width: 479px)" srcset='images/index_img/for_mobile/webp/1x/Igor_Demyanenko_450x460@1x.webp 1x,
+                images/index_img/for_mobile/webp/2x/Igor_Demyanenko_900x920@2x.webp 2x' type="image/webp" width="480px">
+              <source media="(max-width: 479px)" srcset='images/index_img/for_mobile/jpg/1x/Igor_Demyanenko_450x460@1x.jpg 1x,
+                images/index_img/for_mobile/jpg/2x/Igor_Demyanenko_900x920@2x.jpg' width="480px">
+              <source media="(min-width: 480px) and (max-width: 767px)" srcset='images/index_img/for_tablet/webp/2x/Igor_Demyanenko_708x748@2x.webp 1x, 
+                  images/index_img/for_tablet/webp/2x/Igor_Demyanenko_708x748@2x.webp 2x' type="image/webp" width="768px">
+              <source media="(min-width: 480px) and (max-width: 767px)" srcset='images/index_img/for_tablet/jpg/1x/Igor_Demyanenko_354x374@1x.jpg 1x, 
+                  images/index_img/for_tablet/jpg/2x/Igor_Demyanenko_708x748@2x.jpg 2x' width="768px">
+              <source media="(min-width: 1200px)" srcset='images/index_img/for_desktop/webp/1x/Igor_Demyanenko_270x260@1x.webp 1x, 
+                images/index_img/for_desktop/webp/2x/Igor_Demyanenko_540x520@2x.webp 2x' type="image/webp" width="1200px">
+              <source media="(min-width: 1200px)" srcset='images/index_img/for_desktop/jpg/1x/Igor_Demyanenko_270x260@1x.jpg 1x, 
+                images/index_img/for_desktop/jpg/2x/Igor_Demyanenko_540x520@2x.jpg 2x' width="1200px">
+              <img src="images/index_img/for_desktop/jpg/1x/Igor_Demyanenko_270x260@1x.jpg" >
+            </picture>
+            <!-- <img src="./images/index_img/Igor_Demyanenko.jpg" alt="Игорь Демьяненко" width="270" height="260"> -->
             <div class="team__text">
               <h3 class="team__worker">Игорь Демьяненко</h3>
               <p class="team__position">Product Designer</p>
@@ -232,8 +269,24 @@
                 </li>
               </ul>
             </div>
+          </li>
           <li class="team__summary">
-            <img src="./images/index_img/Olga_Repina.jpg" alt="Ольга Репина" width="270" height="260">
+            <picture>
+              <source media="(min-width: 480px) and (max-width: 767px)" srcset='images/index_img/for_mobile/webp/1x/Olga_Repina_450x460@1x.webp 1x,
+                images/index_img/for_mobile/webp/2x/Olga_Repina_900x920@2x.webp 2x' type="image/webp">
+              <source media="(min-width: 480px) and (max-width: 767px)" srcset='images/index_img/for_mobile/jpg/1x/Olga_Repina_450x460@1x.jpg 1x,
+                images/index_img/for_mobile/jpg/2x/Olga_Repina_900x920@2x.jpg'>
+              <source media="(min-width: 768px) and (max-width: 1199px)" srcset='images/index_img/for_tablet/webp/2x/Olga_Repina_708x748@2x.webp 1x, 
+                images/index_img/for_tablet/webp/2x/Olga_Repina_708x748@2x.webp 2x' type="image/webp">
+              <source media="(min-width: 768px) and (max-width: 1199px)" srcset='images/index_img/for_tablet/jpg/1x/Olga_Repina_354x374@1x.jpg 1x, 
+                images/index_img/for_tablet/jpg/2x/Olga_Repina_708x748@2x.jpg 2x'>
+              <source media="(min-width: 1200px)" srcset='images/index_img/for_desktop/webp/1x/Olga_Repina_270x260@1x.webp 1x, 
+                images/index_img/for_desktop/webp/2x/Olga_Repina_540x520@2x.webp 2x' type="image/webp">
+              <source media="(min-width: 1200px)" srcset='images/index_img/for_desktop/jpg/1x/Olga_Repina_270x260@1x.jpg 1x, 
+                images/index_img/for_desktop/jpg/2x/Olga_Repina_540x520@2x.jpg 2x'>
+              <img src="images/index_img/for_desktop/jpg/1x/Olga_Repina_270x260@1x.jpg">
+            </picture>
+            <!-- <img src="./images/index_img/Olga_Repina.jpg" alt="Ольга Репина" width="270" height="260"> -->
             <div class="team__text">
               <h3 class="team__worker">Ольга Репина</h3>
               <p class="team__position">Frontend Developer</p>
@@ -270,7 +323,22 @@
             </div>
           </li>
           <li class="team__summary">
-            <img src="./images/index_img/Nikolay_Tarasov.jpg" alt="Николай Тарасов" width="270" height="260">
+            <picture>
+              <source media="(min-width: 480px) and (max-width: 767px)" srcset='images/index_img/for_mobile/webp/1x/Nikolay_Tarasov_450x460@1x.webp 1x,
+                images/index_img/for_mobile/webp/2x/Nikolay_Tarasov_900x920@2x.webp 2x' type="image/webp">
+              <source media="(min-width: 480px) and (max-width: 767px)" srcset='images/index_img/for_mobile/jpg/1x/Nikolay_Tarasov_450x460@1x.jpg 1x,
+                images/index_img/for_mobile/jpg/2x/Nikolay_Tarasov_900x920@2x.jpg'>
+              <source media="(min-width: 768px) and (max-width: 1199px)" srcset='images/index_img/for_tablet/webp/2x/Nikolay_Tarasov_708x748@2x.webp 1x, 
+                images/index_img/for_tablet/webp/2x/Nikolay_Tarasov_708x748@2x.webp 2x' type="image/webp">
+              <source media="(min-width: 768px) and (max-width: 1199px)" srcset='images/index_img/for_tablet/jpg/1x/Nikolay_Tarasov_354x374@1x.jpg 1x, 
+                images/index_img/for_tablet/jpg/2x/Nikolay_Tarasov_708x748@2x.jpg 2x'>
+              <source media="(min-width: 1200px)" srcset='images/index_img/for_desktop/webp/1x/Nikolay_Tarasov_270x260@1x.webp 1x, 
+                images/index_img/for_desktop/webp/2x/Nikolay_Tarasov_540x520@2x.webp 2x' type="image/webp">
+              <source media="(min-width: 1200px)" srcset='images/index_img/for_desktop/jpg/1x/Nikolay_Tarasov_270x260@1x.jpg 1x, 
+                images/index_img/for_desktop/jpg/2x/Nikolay_Tarasov_540x520@2x.jpg 2x'>
+              <img src="images/index_img/for_desktop/jpg/1x/Nikolay_Tarasov_270x260@1x.jpg">
+            </picture>
+            <!-- <img src="./images/index_img/Nikolay_Tarasov.jpg" alt="Николай Тарасов" width="270" height="260"> -->
             <div class="team__text">
               <h3 class="team__worker">Николай Тарасов</h3>
               <p class="team__position">Marketing</p>
@@ -307,7 +375,22 @@
             </div>
           </li>
           <li class="team__summary">
-            <img src="./images/index_img/Mikhail_Ermakov.jpg" alt="Михаил Ермаков" width="270" height="260">
+            <picture>
+              <source media="(min-width: 480px) and (max-width: 767px)" srcset='images/index_img/for_mobile/webp/1x/Mikhail_Ermakov_450x460@1x.webp 1x,
+                images/index_img/for_mobile/webp/2x/Mikhail_Ermakov_900x920@2x.webp 2x' type="image/webp">
+              <source media="(min-width: 480px) and (max-width: 767px)" srcset='images/index_img/for_mobile/jpg/1x/Mikhail_Ermakov_450x460@1x.jpg 1x,
+                images/index_img/for_mobile/jpg/2x/Mikhail_Ermakov_900x920@2x.jpg'>
+              <source media="(min-width: 768px) and (max-width: 1199px)" srcset='images/index_img/for_tablet/webp/2x/Mikhail_Ermakov_708x748@2x.webp 1x, 
+                images/index_img/for_tablet/webp/2x/Mikhail_Ermakov_708x748@2x.webp 2x' type="image/webp">
+              <source media="(min-width: 768px) and (max-width: 1199px)" srcset='images/index_img/for_tablet/jpg/1x/Mikhail_Ermakov_354x374@1x.jpg 1x, 
+                images/index_img/for_tablet/jpg/2x/Mikhail_Ermakov_708x748@2x.jpg 2x'>
+              <source media="(min-width: 1200px)" srcset='images/index_img/for_desktop/webp/1x/Mikhail_Ermakov_270x260@1x.webp 1x, 
+                images/index_img/for_desktop/webp/2x/Mikhail_Ermakov_540x520@2x.webp 2x' type="image/webp">
+              <source media="(min-width: 1200px)" srcset='images/index_img/for_desktop/jpg/1x/Mikhail_Ermakov_270x260@1x.jpg 1x, 
+                images/index_img/for_desktop/jpg/2x/Mikhail_Ermakov_540x520@2x.jpg 2x'>
+              <img src="images/index_img/for_desktop/jpg/1x/Mikhail_Ermakov_270x260@1x.jpg">
+            </picture>
+            <!-- <img src="./images/index_img/Mikhail_Ermakov.jpg" alt="Михаил Ермаков" width="270" height="260"> -->
             <div class="team__text">
               <h3 class="team__worker">Михаил Ермаков</h3>
               <p class="team__position">UI Designer</p>

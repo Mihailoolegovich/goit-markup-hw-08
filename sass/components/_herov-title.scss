@@ -1,40 +1,99 @@
 //   Herov title
 
 .herov {
-  max-width: 1600px;
+  min-width: 480px;
   background-color: #c4c4c4;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/index_img/fon.jpg);
+    url(../../images/index_img/for_mobile/jpg/1x/fon_480x400@1x.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 200px 0;
+  padding: 118px 0;
   margin: 0 auto;
+}
 
-  &__title {
-    text-align: center;
-    margin: 0 auto 30px;
-    max-width: 696px;
-    text-transform: uppercase;
-
-    color: $primary-white-color;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
-    letter-spacing: 0.06em;
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .herov {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/index_img/for_mobile/jpg/2x/fon_960x800@2x.jpg);
   }
+}
 
-  &__text {
-    color: $primary-white-color;
+@media screen and (min-width: 768px) {
+  .herov {
+    max-width: 768px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/index_img/for_tablet/jpg/1x/fon_768x400@1x.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .herov {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../images/index_img/for_tablet/jpg/2x/fon_1536x800@2x.jpg);
+    }
+  }
+}
 
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
-    letter-spacing: 0.06em;
+@media screen and (min-width: 1200px) {
+  .herov {
+    max-width: 1200px;
+    padding: 200px 0;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/index_img/for_desktop/jpg/1x/fon_1600x600@1x.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      .herov {
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../../images/index_img/for_desktop/jpg/2x/fon_3200x1200@2x.jpg);
+      }
+    }
+  }
+}
+
+.herov__title {
+  text-align: center;
+  margin: 0 auto 30px;
+  max-width: 360px;
+  text-transform: uppercase;
+  color: $primary-white-color;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+  @media screen and (min-width: 1200px) {
+    & {
+      max-width: 696px;
+      font-size: 44px;
+      line-height: 1.4;
+    }
   }
 }
 

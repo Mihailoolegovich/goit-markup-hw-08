@@ -1,7 +1,8 @@
 /* ==========Partners========== */
 
 .partners {
-  padding: 94px 0;
+  // padding: 94px 0;
+  padding: 60px 0;
 
   &__titel {
     margin-bottom: 50px;
@@ -14,19 +15,29 @@
 
   &__links {
     display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
+    justify-content: center;
   }
 
-  &__logotypes:not(:last-child) {
-    margin-right: 30px;
+  &__logotypes:nth-child(2n) {
+    margin-left: 30px;
   }
+
+  &__logotypes:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
+  }
+  // &__logotypes:not(:last-child) {
+  //   margin-right: 30px;
+  // }
 }
 
 .partners__focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
+  //  width: 170px;
   height: 92px;
   border: 1px solid $border-color;
   border-radius: 4px;
