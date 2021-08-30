@@ -1,0 +1,48 @@
+/* ========== Company credo ========== */
+
+.company-credo {
+  padding: 94px 0;
+}
+
+.credo {
+  display: flex;
+
+  &__cards:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__cards {
+    width: 270px;
+    /* height: 101px;*/
+  }
+
+  &__icon {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $primary-button-color;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    height: 16px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+
+    color: $primary-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+  }
+
+  &__text {
+    /* height: 75px; */
+    color: $primary-text-color;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+  }
+}

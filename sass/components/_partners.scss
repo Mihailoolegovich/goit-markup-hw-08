@@ -1,0 +1,43 @@
+/* ==========Partners========== */
+
+.partners {
+  padding: 94px 0;
+
+  &__titel {
+    margin-bottom: 50px;
+    text-align: center;
+    color: $primary-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  &__links {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  &__logotypes:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.partners__focus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid $border-color;
+  border-radius: 4px;
+  fill: $border-color;
+
+  transition: border $transition-duration-timing,
+    fill $transition-duration-timing;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-coolor;
+    fill: $accent-coolor;
+  }
+}

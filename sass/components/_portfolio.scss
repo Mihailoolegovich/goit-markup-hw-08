@@ -1,0 +1,124 @@
+/* ==========Portfolio========== */
+
+.portfolio {
+  padding: 94px 0;
+}
+
+.filling {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+
+  &__list:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.filling__filter {
+  padding: 6px 22px;
+  background-color: $primary-button-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  transition: background-color $transition-duration-timing,
+    color $transition-duration-timing, box-shadow $transition-duration-timing;
+
+  &:hover,
+  &:focus,
+  &--location {
+    background-color: $accent-coolor;
+    color: $primary-white-color;
+    cursor: pointer;
+    box-shadow: $shadow-button-portfolio;
+  }
+}
+
+.publication {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__post {
+    width: 370px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__post:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  &__post:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+
+  &__cart {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__footer {
+    border: 1px solid #eeeeee;
+    border-top: 0;
+    padding: 20px 24px;
+  }
+
+  &__title {
+    margin-bottom: 4px;
+
+    color: $primary-color;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+  }
+
+  &__category {
+    color: $primary-text-color;
+    font-size: 16px;
+    line-height: 1.9;
+  }
+}
+
+.publication__link {
+  display: block;
+
+  transition: box-shadow $transition-duration-timing;
+
+  &:hover,
+  &:focus {
+    box-shadow: $shadow-cards-portfolio;
+  }
+}
+
+.hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(53, 139, 209, 0.9);
+  transform: translatey(100%);
+
+  transition: transform $transition-duration-timing;
+
+  .publication__link:hover &,
+  .publication__link:focus & {
+    transform: translatey(0);
+  }
+
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 322px;
+    height: 168px;
+
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    color: $primary-white-color;
+  }
+}

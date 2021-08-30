@@ -1,0 +1,86 @@
+//  Team  */
+
+.team {
+  background-color: $primary-button-color;
+  padding: 94px 0;
+
+  &__title {
+    margin-bottom: 50px;
+    text-align: center;
+
+    color: $primary-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  &__cards {
+    display: flex;
+  }
+
+  &__summary:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__summary {
+    box-shadow: $shadow-cards-index;
+    border-radius: 0px 0px 4px 4px;
+    overflow: hidden;
+  }
+
+  &__text {
+    background-color: $primary-white-color;
+    padding: 30px 0;
+  }
+
+  &__worker {
+    height: 19px;
+    text-align: center;
+    margin-bottom: 10px;
+
+    color: $primary-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  &__position {
+    height: 19px;
+    text-align: center;
+    color: $primary-text-color;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+}
+
+//     Social
+
+.social {
+  display: flex;
+  justify-content: center;
+
+  &__link:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social__icon--team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: $border-color;
+  background-color: rgba(238, 238, 238, 0); //Прозорість
+
+  transition: background-color $transition-duration-timing,
+    fill $transition-duration-timing;
+
+  &:hover,
+  &:focus {
+    fill: $primary-white-color;
+    background-color: $accent-coolor;
+  }
+}
