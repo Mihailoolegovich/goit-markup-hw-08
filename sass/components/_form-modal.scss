@@ -24,29 +24,43 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 528px;
-  min-height: 581px;
+  // min-width: 528px;
+  // min-height: 581px;
+  min-width: 450px;
+  min-height: 609px;
   box-shadow: $shadow-cards-index;
   border-radius: 4px;
 
   background-color: #fff;
   transition: opacity $transition-duration-timing;
 
-  &__close {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: $primary-white-color;
-
-    transition: fill $transition-duration-timing;
+  // @media screen and (min-width: 480px) {
+  //   & {
+  //     min-width: 450px;
+  //     min-height: 609px;
+  //   }
+  // }
+  @media screen and (min-width: 1200px) {
+    & {
+      min-width: 528px;
+      min-height: 581px;
+    }
   }
+}
+.modal__close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: $primary-white-color;
 
-  &__close:hover,
-  &__close:focus {
+  transition: fill $transition-duration-timing;
+
+  &:hover,
+  &:focus {
     fill: $accent-coolor;
     cursor: pointer;
   }
@@ -58,10 +72,20 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 40px 0;
+  padding: 40px 40px;
   margin: 0 auto;
-  width: 448px;
-
+  width: 100%;
+  height: 100%;
+  // @media screen and (min-width: 480px) {
+  //   & {
+  //     width: 360px;
+  //   }
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   & {
+  //     width: 448px;
+  //   }
+  // }
   &__title {
     margin-bottom: 12px;
     text-align: center;
@@ -154,17 +178,23 @@
   align-items: center;
   justify-content: center;
 
-  &__text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: $primary-text-color;
-  }
-
   &__link {
     color: $accent-coolor;
     text-decoration: underline;
+  }
+}
+
+.checkbox__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+  @media screen and (min-width: 1200px) {
+    & {
+      font-size: 14px;
+      line-height: 1.7;
+    }
   }
 }
 

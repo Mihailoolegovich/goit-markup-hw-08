@@ -1,7 +1,7 @@
 //    Footer
 
 .footer {
-  width: 100%;
+  min-width: 480px;
   background-color: $background-color;
   padding: 60px 0;
 }
@@ -13,6 +13,7 @@
 
 .nav__site--footer {
   display: block;
+  text-align: center;
   margin-bottom: 20px;
   height: 31px;
   color: $primary-white-color;
@@ -25,6 +26,8 @@
 
 .addresses {
   font-style: normal;
+  text-align: center;
+  margin-bottom: 60px;
 
   &__map {
     margin-bottom: 9px;
@@ -56,10 +59,12 @@
 //      Invitation
 
 .invitation {
+  margin-bottom: 60px;
   // margin-left: 70px;
   // align-items: baseline;
 
   &__title {
+    text-align: center;
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
@@ -101,8 +106,8 @@
 .form-footer {
   // margin-left: 93px;
   // align-items: baseline;
-  width: 570px;
-
+  // width: 570px;
+  text-align: center;
   &__title {
     margin-bottom: 20px;
     font-weight: 700;
@@ -115,7 +120,9 @@
 
   &__subscrib {
     // display: flex;
-    align-items: baseline;
+    // align-items: baseline;
+    display: block;
+    text-align: center;
   }
 
   &__icon {
@@ -125,9 +132,10 @@
 
 .form-footer__input {
   padding-left: 16px;
-  margin-right: 12px;
+  margin-bottom: 20px;
+  // margin-right: 12px;
   height: 50px;
-  // width: 100%;
+  width: 100%;
   background-color: $background-color;
   border: 1px solid $border-color;
   border-radius: 4px;
@@ -157,7 +165,7 @@
   //    Button in (_mixins.scss)
   @include button();
   border: none;
-
+  margin: 0 auto;
   &:hover,
   &:focus {
     background-color: #188ce8;

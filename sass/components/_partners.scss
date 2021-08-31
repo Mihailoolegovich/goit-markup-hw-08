@@ -5,32 +5,68 @@
   padding: 60px 0;
 
   &__titel {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     text-align: center;
     color: $primary-color;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
   }
-
-  &__links {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    justify-content: center;
-  }
-
-  &__logotypes:nth-child(2n) {
-    margin-left: 30px;
-  }
-
-  &__logotypes:not(:nth-last-child(-n + 2)) {
-    margin-bottom: 30px;
-  }
-  // &__logotypes:not(:last-child) {
-  //   margin-right: 30px;
-  // }
 }
+
+.partners__links {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  @media screen and (max-width: 767px) {
+    & {
+      margin: -15px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    & {
+      margin: -15px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    & {
+      margin: -30px;
+    }
+  }
+}
+.partners__logotypes {
+  @media screen and (max-width: 767px) {
+    & {
+      width: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    & {
+      width: calc((100% - 6 * 15px) / 3);
+      margin: 15px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    & {
+      width: calc((100% - 12 * 30px) / 6);
+      margin: 30px;
+    }
+  }
+}
+
+// Desktop
+// .partners__logotypes:nth-child(2n) {
+// margin-left: 30px;
+// }
+//
+// .partners__logotypes:not(:nth-last-child(-n + 2)) {
+// margin-bottom: 30px;
+// }
+// &__logotypes:not(:last-child) {
+//   margin-right: 30px;
+// }
 
 .partners__focus {
   display: flex;

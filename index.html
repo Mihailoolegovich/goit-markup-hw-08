@@ -24,6 +24,45 @@
         <a class="nav__site" href="./index.html">
           <span class="nav__site--web">Web</span>Studio
         </a>
+        <!--  Mobile-menu -->
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg  width="24px" height="24px">
+            <use href="images/icons.svg#icon-menu_24px"></use>
+          </svg>
+        </button>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+            <svg width="24px" height="24px">
+              <use href="images/icons.svg#icon-close_24px"></use>
+            </svg>
+          </button>
+          <ul class="menu-nav__pages">
+            <li class="menu-nav__item"><a class="menu-nav__link menu-nav__link--location" href="./index.html">Студия</a></li>
+            <li class="menu-nav__item"><a class="menu-nav__link" href="./portfolio.html">Портфолио</a></li>
+            <li class="menu-nav__item"><a class="menu-nav__link" href="#">Контакты</a></li>
+          </ul>
+          <ul class="menu-contacts"></ul>
+          <li class="menu-contacts__item">
+            <a class="menu-contacts__link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+          <li class="menu-contacts__item">
+            <a class="menu-contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <ul class="menu-social">
+            <li class="menu-social__item">
+              <a class="menu-social__link">Instagram</a>
+            </li>
+            <li class="menu-social__item">
+              <a class="menu-social__link">Twitter</a>
+            </li>
+            <li class="menu-social__item">
+              <a class="menu-social__link">Facebook</a>
+            </li>
+            <li class="menu-social__item">
+              <a class="menu-social__link">LinkedIn</a>
+            </li>
+          </ul>
+          </div>
         <!-- Nav-links -->
         <ul class="nav__pages">
           <li class="nav__item"><a class="nav__link nav__link--location" href="./index.html">Студия</a></li>
@@ -220,19 +259,19 @@
         <ul class="team__cards">
           <li class="team__summary">
             <picture>
-              <source media="(max-width: 479px)" srcset='images/index_img/for_mobile/webp/1x/Igor_Demyanenko_450x460@1x.webp 1x,
-                images/index_img/for_mobile/webp/2x/Igor_Demyanenko_900x920@2x.webp 2x' type="image/webp" width="480px">
-              <source media="(max-width: 479px)" srcset='images/index_img/for_mobile/jpg/1x/Igor_Demyanenko_450x460@1x.jpg 1x,
-                images/index_img/for_mobile/jpg/2x/Igor_Demyanenko_900x920@2x.jpg' width="480px">
-              <source media="(min-width: 480px) and (max-width: 767px)" srcset='images/index_img/for_tablet/webp/2x/Igor_Demyanenko_708x748@2x.webp 1x, 
-                  images/index_img/for_tablet/webp/2x/Igor_Demyanenko_708x748@2x.webp 2x' type="image/webp" width="768px">
-              <source media="(min-width: 480px) and (max-width: 767px)" srcset='images/index_img/for_tablet/jpg/1x/Igor_Demyanenko_354x374@1x.jpg 1x, 
-                  images/index_img/for_tablet/jpg/2x/Igor_Demyanenko_708x748@2x.jpg 2x' width="768px">
+              <source media="(min-width: 480px) and (max-width: 767px)" srcset='images/index_img/for_mobile/webp/1x/Igor_Demyanenko_450x460@1x.webp 1x,
+                images/index_img/for_mobile/webp/2x/Igor_Demyanenko_900x920@2x.webp 2x' type="image/webp" width="450px" heigth="460px">
+              <source media="(min-width: 480px) and (max-width: 767px)" srcset='images/index_img/for_mobile/jpg/1x/Igor_Demyanenko_450x460@1x.jpg 1x,
+                images/index_img/for_mobile/jpg/2x/Igor_Demyanenko_900x920@2x.jpg' width="450px" heigth="460px">
+              <source media="(min-width: 768px) and (max-width: 1199px)" srcset='images/index_img/for_tablet/webp/2x/Igor_Demyanenko_708x748@2x.webp 1x, 
+                  images/index_img/for_tablet/webp/2x/Igor_Demyanenko_708x748@2x.webp 2x' type="image/webp" width="354px" heigth="374px">
+              <source media="(min-width: 768px) and (max-width: 1199px)" srcset='images/index_img/for_tablet/jpg/1x/Igor_Demyanenko_354x374@1x.jpg 1x, 
+                  images/index_img/for_tablet/jpg/2x/Igor_Demyanenko_708x748@2x.jpg 2x' width="354px" heigth="374px">
               <source media="(min-width: 1200px)" srcset='images/index_img/for_desktop/webp/1x/Igor_Demyanenko_270x260@1x.webp 1x, 
-                images/index_img/for_desktop/webp/2x/Igor_Demyanenko_540x520@2x.webp 2x' type="image/webp" width="1200px">
+                images/index_img/for_desktop/webp/2x/Igor_Demyanenko_540x520@2x.webp 2x' type="image/webp" width="270" height="260">
               <source media="(min-width: 1200px)" srcset='images/index_img/for_desktop/jpg/1x/Igor_Demyanenko_270x260@1x.jpg 1x, 
-                images/index_img/for_desktop/jpg/2x/Igor_Demyanenko_540x520@2x.jpg 2x' width="1200px">
-              <img src="images/index_img/for_desktop/jpg/1x/Igor_Demyanenko_270x260@1x.jpg" >
+                images/index_img/for_desktop/jpg/2x/Igor_Demyanenko_540x520@2x.jpg 2x' width="270" height="260">
+              <img src="images/index_img/for_mobile/jpg/1x/Igor_Demyanenko_450x460@1x.jpg" alt="Игорь Демьяненко" width="450px" heigth="460px" >
             </picture>
             <!-- <img src="./images/index_img/Igor_Demyanenko.jpg" alt="Игорь Демьяненко" width="270" height="260"> -->
             <div class="team__text">
@@ -273,18 +312,18 @@
           <li class="team__summary">
             <picture>
               <source media="(min-width: 480px) and (max-width: 767px)" srcset='images/index_img/for_mobile/webp/1x/Olga_Repina_450x460@1x.webp 1x,
-                images/index_img/for_mobile/webp/2x/Olga_Repina_900x920@2x.webp 2x' type="image/webp">
+                images/index_img/for_mobile/webp/2x/Olga_Repina_900x920@2x.webp 2x' type="image/webp"  width="450px" heigth="460px">
               <source media="(min-width: 480px) and (max-width: 767px)" srcset='images/index_img/for_mobile/jpg/1x/Olga_Repina_450x460@1x.jpg 1x,
-                images/index_img/for_mobile/jpg/2x/Olga_Repina_900x920@2x.jpg'>
+                images/index_img/for_mobile/jpg/2x/Olga_Repina_900x920@2x.jpg'  width="450px" heigth="460px">
               <source media="(min-width: 768px) and (max-width: 1199px)" srcset='images/index_img/for_tablet/webp/2x/Olga_Repina_708x748@2x.webp 1x, 
-                images/index_img/for_tablet/webp/2x/Olga_Repina_708x748@2x.webp 2x' type="image/webp">
+                images/index_img/for_tablet/webp/2x/Olga_Repina_708x748@2x.webp 2x' type="image/webp" width="354px" heigth="374px">
               <source media="(min-width: 768px) and (max-width: 1199px)" srcset='images/index_img/for_tablet/jpg/1x/Olga_Repina_354x374@1x.jpg 1x, 
-                images/index_img/for_tablet/jpg/2x/Olga_Repina_708x748@2x.jpg 2x'>
+                images/index_img/for_tablet/jpg/2x/Olga_Repina_708x748@2x.jpg 2x' width="354px" heigth="374px">
               <source media="(min-width: 1200px)" srcset='images/index_img/for_desktop/webp/1x/Olga_Repina_270x260@1x.webp 1x, 
-                images/index_img/for_desktop/webp/2x/Olga_Repina_540x520@2x.webp 2x' type="image/webp">
+                images/index_img/for_desktop/webp/2x/Olga_Repina_540x520@2x.webp 2x' type="image/webp" width="270" height="260">
               <source media="(min-width: 1200px)" srcset='images/index_img/for_desktop/jpg/1x/Olga_Repina_270x260@1x.jpg 1x, 
-                images/index_img/for_desktop/jpg/2x/Olga_Repina_540x520@2x.jpg 2x'>
-              <img src="images/index_img/for_desktop/jpg/1x/Olga_Repina_270x260@1x.jpg">
+                images/index_img/for_desktop/jpg/2x/Olga_Repina_540x520@2x.jpg 2x' width="270" height="260">
+              <img src="images/index_img/for_mobile/jpg/1x/Olga_Repina_450x460@1x.jpg"  alt="Ольга Репина"  width="450px" heigth="460px">
             </picture>
             <!-- <img src="./images/index_img/Olga_Repina.jpg" alt="Ольга Репина" width="270" height="260"> -->
             <div class="team__text">
@@ -325,18 +364,18 @@
           <li class="team__summary">
             <picture>
               <source media="(min-width: 480px) and (max-width: 767px)" srcset='images/index_img/for_mobile/webp/1x/Nikolay_Tarasov_450x460@1x.webp 1x,
-                images/index_img/for_mobile/webp/2x/Nikolay_Tarasov_900x920@2x.webp 2x' type="image/webp">
+                images/index_img/for_mobile/webp/2x/Nikolay_Tarasov_900x920@2x.webp 2x' type="image/webp" width="450px" heigth="460px">
               <source media="(min-width: 480px) and (max-width: 767px)" srcset='images/index_img/for_mobile/jpg/1x/Nikolay_Tarasov_450x460@1x.jpg 1x,
-                images/index_img/for_mobile/jpg/2x/Nikolay_Tarasov_900x920@2x.jpg'>
+                images/index_img/for_mobile/jpg/2x/Nikolay_Tarasov_900x920@2x.jpg' width="450px" heigth="460px">
               <source media="(min-width: 768px) and (max-width: 1199px)" srcset='images/index_img/for_tablet/webp/2x/Nikolay_Tarasov_708x748@2x.webp 1x, 
-                images/index_img/for_tablet/webp/2x/Nikolay_Tarasov_708x748@2x.webp 2x' type="image/webp">
+                images/index_img/for_tablet/webp/2x/Nikolay_Tarasov_708x748@2x.webp 2x' type="image/webp" width="354px" heigth="374px">
               <source media="(min-width: 768px) and (max-width: 1199px)" srcset='images/index_img/for_tablet/jpg/1x/Nikolay_Tarasov_354x374@1x.jpg 1x, 
-                images/index_img/for_tablet/jpg/2x/Nikolay_Tarasov_708x748@2x.jpg 2x'>
+                images/index_img/for_tablet/jpg/2x/Nikolay_Tarasov_708x748@2x.jpg 2x' width="354px" heigth="374px">
               <source media="(min-width: 1200px)" srcset='images/index_img/for_desktop/webp/1x/Nikolay_Tarasov_270x260@1x.webp 1x, 
-                images/index_img/for_desktop/webp/2x/Nikolay_Tarasov_540x520@2x.webp 2x' type="image/webp">
+                images/index_img/for_desktop/webp/2x/Nikolay_Tarasov_540x520@2x.webp 2x' type="image/webp" width="270" height="260">
               <source media="(min-width: 1200px)" srcset='images/index_img/for_desktop/jpg/1x/Nikolay_Tarasov_270x260@1x.jpg 1x, 
-                images/index_img/for_desktop/jpg/2x/Nikolay_Tarasov_540x520@2x.jpg 2x'>
-              <img src="images/index_img/for_desktop/jpg/1x/Nikolay_Tarasov_270x260@1x.jpg">
+                images/index_img/for_desktop/jpg/2x/Nikolay_Tarasov_540x520@2x.jpg 2x' width="270" height="260">
+              <img src="images/index_img/for_mobile/jpg/1x/Nikolay_Tarasov_450x460@1x.jpg"  alt="Николай Тарасов"  width="450px" heigth="460px">
             </picture>
             <!-- <img src="./images/index_img/Nikolay_Tarasov.jpg" alt="Николай Тарасов" width="270" height="260"> -->
             <div class="team__text">
@@ -377,18 +416,18 @@
           <li class="team__summary">
             <picture>
               <source media="(min-width: 480px) and (max-width: 767px)" srcset='images/index_img/for_mobile/webp/1x/Mikhail_Ermakov_450x460@1x.webp 1x,
-                images/index_img/for_mobile/webp/2x/Mikhail_Ermakov_900x920@2x.webp 2x' type="image/webp">
+                images/index_img/for_mobile/webp/2x/Mikhail_Ermakov_900x920@2x.webp 2x' type="image/webp" width="450px" heigth="460px">
               <source media="(min-width: 480px) and (max-width: 767px)" srcset='images/index_img/for_mobile/jpg/1x/Mikhail_Ermakov_450x460@1x.jpg 1x,
-                images/index_img/for_mobile/jpg/2x/Mikhail_Ermakov_900x920@2x.jpg'>
+                images/index_img/for_mobile/jpg/2x/Mikhail_Ermakov_900x920@2x.jpg' width="450px" heigth="460px">
               <source media="(min-width: 768px) and (max-width: 1199px)" srcset='images/index_img/for_tablet/webp/2x/Mikhail_Ermakov_708x748@2x.webp 1x, 
-                images/index_img/for_tablet/webp/2x/Mikhail_Ermakov_708x748@2x.webp 2x' type="image/webp">
+                images/index_img/for_tablet/webp/2x/Mikhail_Ermakov_708x748@2x.webp 2x' type="image/webp" width="354px" heigth="374px">
               <source media="(min-width: 768px) and (max-width: 1199px)" srcset='images/index_img/for_tablet/jpg/1x/Mikhail_Ermakov_354x374@1x.jpg 1x, 
-                images/index_img/for_tablet/jpg/2x/Mikhail_Ermakov_708x748@2x.jpg 2x'>
+                images/index_img/for_tablet/jpg/2x/Mikhail_Ermakov_708x748@2x.jpg 2x' width="354px" heigth="374px">
               <source media="(min-width: 1200px)" srcset='images/index_img/for_desktop/webp/1x/Mikhail_Ermakov_270x260@1x.webp 1x, 
-                images/index_img/for_desktop/webp/2x/Mikhail_Ermakov_540x520@2x.webp 2x' type="image/webp">
+                images/index_img/for_desktop/webp/2x/Mikhail_Ermakov_540x520@2x.webp 2x' type="image/webp" width="270" height="260">
               <source media="(min-width: 1200px)" srcset='images/index_img/for_desktop/jpg/1x/Mikhail_Ermakov_270x260@1x.jpg 1x, 
-                images/index_img/for_desktop/jpg/2x/Mikhail_Ermakov_540x520@2x.jpg 2x'>
-              <img src="images/index_img/for_desktop/jpg/1x/Mikhail_Ermakov_270x260@1x.jpg">
+                images/index_img/for_desktop/jpg/2x/Mikhail_Ermakov_540x520@2x.jpg 2x' width="270" height="260">
+              <img src="images/index_img/for_mobile/jpg/1x/Mikhail_Ermakov_450x460@1x.jpg" alt="Михаил Ермаков"  width="450px" heigth="460px">
             </picture>
             <!-- <img src="./images/index_img/Mikhail_Ermakov.jpg" alt="Михаил Ермаков" width="270" height="260"> -->
             <div class="team__text">
@@ -551,6 +590,11 @@
       </form>
     </div>
   </footer>
+
+  <script defer src="js/mobile-menu.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
   <script src="./js/modal.js"></script>
 </body>
 

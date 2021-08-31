@@ -14,70 +14,69 @@
   background-position: center;
   padding: 118px 0;
   margin: 0 auto;
-}
 
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .herov {
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../../images/index_img/for_mobile/jpg/2x/fon_960x800@2x.jpg);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .herov {
-    max-width: 768px;
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../../images/index_img/for_tablet/jpg/1x/fon_768x400@1x.jpg);
-  }
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    .herov {
+    & {
       background-image: linear-gradient(
           to right,
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/index_img/for_tablet/jpg/2x/fon_1536x800@2x.jpg);
+        url(../../images/index_img/for_mobile/jpg/2x/fon_960x800@2x.jpg);
     }
   }
-}
 
-@media screen and (min-width: 1200px) {
-  .herov {
-    max-width: 1200px;
-    padding: 200px 0;
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../../images/index_img/for_desktop/jpg/1x/fon_1600x600@1x.jpg);
+  @media screen and (min-width: 768px) {
+    & {
+      max-width: 768px;
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../images/index_img/for_tablet/jpg/1x/fon_768x400@1x.jpg);
+    }
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      .herov {
+      & {
         background-image: linear-gradient(
             to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)
           ),
-          url(../../images/index_img/for_desktop/jpg/2x/fon_3200x1200@2x.jpg);
+          url(../../images/index_img/for_tablet/jpg/2x/fon_1536x800@2x.jpg);
+      }
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    & {
+      max-width: 1200px;
+      padding: 200px 0;
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../images/index_img/for_desktop/jpg/1x/fon_1600x600@1x.jpg);
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        & {
+          background-image: linear-gradient(
+              to right,
+              rgba(47, 48, 58, 0.4),
+              rgba(47, 48, 58, 0.4)
+            ),
+            url(../../images/index_img/for_desktop/jpg/2x/fon_3200x1200@2x.jpg);
+        }
       }
     }
   }
 }
-
 .herov__title {
   text-align: center;
   margin: 0 auto 30px;

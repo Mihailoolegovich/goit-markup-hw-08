@@ -1,11 +1,14 @@
 //  Team  */
 
 .team {
+  min-width: 480px;
   background-color: $primary-button-color;
-  padding: 94px 0;
+  // padding: 94px 0;
+  padding: 60px 0;
 
   &__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    // margin-bottom: 50px;
     text-align: center;
 
     color: $primary-color;
@@ -21,7 +24,9 @@
   // &__summary:not(:last-child) {
   //   margin-right: 30px;
   // }
-
+  &__summary:not(:last-child) {
+    margin-bottom: 30px;
+  }
   &__summary {
     box-shadow: $shadow-cards-index;
     border-radius: 0px 0px 4px 4px;
