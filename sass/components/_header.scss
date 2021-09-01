@@ -13,8 +13,14 @@
 .nav {
   display: flex;
   align-items: baseline;
-  padding: 16px 0;
+
+  @media screen and (max-width: 767px) {
+    & {
+      padding: 16px 0;
+    }
+  }
 }
+
 .nav__site {
   color: $logo-studio;
   font-weight: 700;
@@ -23,6 +29,12 @@
   // font-size: 26px;
   // line-height: 1.2;
   font-family: $font-family-Raleway;
+
+  @media screen and (min-width: 1200px) {
+    & {
+      font-size: 26px;
+    }
+  }
 }
 
 .nav__site--web {
@@ -95,6 +107,11 @@
       display: none;
     }
   }
+  @media (min-width: 768px) and (max-width: 1199px) {
+    & {
+      flex-direction: column;
+    }
+  }
 }
 .contacts-header__item {
   margin-left: 50px;
@@ -102,15 +119,24 @@
   &:first-child {
     margin-left: 0px;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    & {
+      margin-left: 0;
+    }
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
 }
 
 .contacts-header__link {
   display: flex;
-  padding: 32px 0;
+  // padding: 32px 0;
   color: $primary-text-color;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1;
+  font-size: 12px;
+  line-height: 1.2;
   align-items: center;
 
   transition: color $transition-duration-timing;
@@ -119,6 +145,13 @@
   &:focus {
     color: $accent-coolor;
     fill: $accent-coolor;
+  }
+
+  @media screen and (min-width: 1200px) {
+    & {
+      font-size: 14px;
+      line-height: 1.1;
+    }
   }
 }
 

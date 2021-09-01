@@ -3,60 +3,75 @@
 .team {
   min-width: 480px;
   background-color: $primary-button-color;
-  // padding: 94px 0;
+  // padding: 94px 0; Desctop
   padding: 60px 0;
+}
+.team__title {
+  margin-bottom: 30px;
+  // margin-bottom: 50px;Desctop
+  text-align: center;
 
-  &__title {
-    margin-bottom: 30px;
-    // margin-bottom: 50px;
-    text-align: center;
+  color: $primary-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+}
 
-    color: $primary-color;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
+.team__cards {
+  @media screen and (min-width: 768px) {
+    & {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      justify-content: center;
+      margin: -15px;
+    }
   }
+}
 
-  // &__cards {
-  //   display: flex;
-  // }
-  //
-  // &__summary:not(:last-child) {
-  //   margin-right: 30px;
-  // }
-  &__summary:not(:last-child) {
-    margin-bottom: 30px;
-  }
-  &__summary {
-    box-shadow: $shadow-cards-index;
-    border-radius: 0px 0px 4px 4px;
-    overflow: hidden;
-  }
+// &__summary:not(:last-child) {
+//   margin-right: 30px;
+// }
 
-  &__text {
-    background-color: $primary-white-color;
-    padding: 30px 0;
+.team__summary {
+  box-shadow: $shadow-cards-index;
+  border-radius: 0px 0px 4px 4px;
+  overflow: hidden;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
-
-  &__worker {
-    height: 19px;
-    text-align: center;
-    margin-bottom: 10px;
-
-    color: $primary-color;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.2;
+  @media screen and (min-width: 768px) {
+    & {
+      margin: 15px;
+    }
   }
+}
 
-  &__position {
-    height: 19px;
-    text-align: center;
-    color: $primary-text-color;
-    font-size: 16px;
-    line-height: 1.2;
-    margin-bottom: 16px;
-  }
+.team__text {
+  background-color: $primary-white-color;
+  padding: 30px 0;
+}
+
+.team__worker {
+  height: 19px;
+  text-align: center;
+  margin-bottom: 10px;
+
+  color: $primary-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.team__position {
+  height: 19px;
+  text-align: center;
+  color: $primary-text-color;
+  font-size: 16px;
+  line-height: 1.2;
+  margin-bottom: 16px;
 }
 
 //     Social
@@ -64,10 +79,9 @@
 .social {
   display: flex;
   justify-content: center;
-
-  &__link:not(:last-child) {
-    margin-right: 10px;
-  }
+}
+.social__link:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social__icon--team {
