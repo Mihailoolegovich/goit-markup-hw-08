@@ -1,0 +1,126 @@
+//
+
+.mobile-menu__open {
+  margin-left: auto;
+}
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  //   transition: fill $transition-duration-timing;
+
+  &:hover,
+  &:focus {
+    fill: $accent-coolor;
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      display: none;
+    }
+  }
+}
+
+.menu-container {
+  //   opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: $primary-white-color;
+  transform: translateX(100%);
+
+  transition: transform $transition-duration-timing;
+  z-index: 1;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+  //   opacity: 1;
+  //   pointer-events: none;
+}
+
+.mobile-menu__close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.menu-nav__pages {
+  margin-bottom: 302px;
+}
+
+.menu-nav__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.menu-nav__link {
+  color: #212121;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.menu-nav__link--location {
+  color: $accent-coolor;
+}
+
+.menu-contacts {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.menu-contacts__item {
+  margin-bottom: 32px;
+}
+
+.menu-contacts__link {
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+
+  &--tel {
+    font-size: 34px;
+    color: $accent-coolor;
+  }
+  &--mail {
+    font-size: 24px;
+    color: $primary-text-color;
+  }
+}
+
+.menu-social {
+  display: flex;
+  margin-top: 32px;
+}
+
+.menu-social__item {
+  padding-right: 10px;
+}
+
+.menu-social__item:not(:first-child) {
+  padding-left: 10px;
+}
+
+.menu-social__item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.menu-social__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: $accent-coolor;
+}
