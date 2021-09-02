@@ -3,18 +3,28 @@
 .team {
   min-width: 480px;
   background-color: $primary-button-color;
-  // padding: 94px 0; Desctop
   padding: 60px 0;
+
+  @media screen and (min-width: 1200px) {
+    & {
+      padding: 94px 0;
+    }
+  }
 }
 .team__title {
   margin-bottom: 30px;
-  // margin-bottom: 50px;Desctop
   text-align: center;
-
   color: $primary-color;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.2;
+
+  @media screen and (min-width: 1200px) {
+    & {
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
+  }
 }
 
 .team__cards {

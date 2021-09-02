@@ -507,62 +507,66 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container__footer container">
-      <div>
-        <a class="nav__site--footer nav__site" href="./index.html">
-          <span class="nav__site--web">Web</span>Studio
-        </a>
-        <!-- Addresses -->
-        <address class="addresses">
-          <p class="addresses__map">г. Киев, пр-т Леси Украинки, 26</p>
-          <ul>
-            <li class="addresses__contact">
-              <a class="addresses__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+      <div class="top-footer">
+        <div class="footer-nav">
+          <a class="nav__site--footer nav__site" href="./index.html">
+            <span class="nav__site--web">Web</span>Studio
+          </a>
+          <!-- Addresses -->
+          <address class="addresses">
+            <p class="addresses__map">г. Киев, пр-т Леси Украинки, 26</p>
+            <ul>
+              <li class="addresses__contact">
+                <a class="addresses__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li class="addresses__contact">
+                <a class="addresses__link" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <!-- Invitation  -->
+        <div class="invitation">
+          <p class="invitation__title">присоединяйтесь</p>
+          <ul class="social">
+            <li class="social__link">
+              <a class="social__icon--footer" href="#">
+                <svg width="20px" height="20px">
+                  <use href="images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="addresses__contact">
-              <a class="addresses__link" href="tel:+380961111111">+38 096 111 11 11</a>
+            <li class="social__link">
+              <a class="social__icon--footer" href="#">
+                <svg width="20px" height="20px">
+                  <use href="images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__link">
+              <a class="social__icon--footer" href="#">
+                <svg width="20px" height="20px">
+                  <use href="images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__link">
+              <a class="social__icon--footer" href="#">
+                <svg width="20px" height="20px">
+                  <use href="images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
-      </div>
-      <!-- Invitation  -->
-      <div class="invitation">
-        <p class="invitation__title">присоединяйтесь</p>
-        <ul class="social">
-          <li class="social__link">
-            <a class="social__icon--footer" href="#">
-              <svg width="20px" height="20px">
-                <use href="images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__link">
-            <a class="social__icon--footer" href="#">
-              <svg width="20px" height="20px">
-                <use href="images/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__link">
-            <a class="social__icon--footer" href="#">
-              <svg width="20px" height="20px">
-                <use href="images/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__link">
-            <a class="social__icon--footer" href="#">
-              <svg width="20px" height="20px">
-                <use href="images/icons.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        </div>
       </div>
       <!-- Form-footer  -->
       <form class="form-footer">
-        <h2 class="form-footer__title">Подпишитесь на рассылку</h2>
         <div class="form-footer__subscrib">
+          <h2 class="form-footer__title">Подпишитесь на рассылку</h2>
           <input class="form-footer__input" type="email" name="email" autocomplete="off" placeholder="E-mail">
+        </div>
           <button class="form-footer__button button" type="submit">
             Подписаться
             <span class="form-footer__icon">
@@ -571,7 +575,7 @@
               </svg>
             </span>
           </button>
-        </div>
+        <!-- </div> -->
       </form>
     </div>
   </footer>
@@ -597,20 +601,21 @@
       <li class="menu-contacts__item">
         <a class="menu-contacts__link menu-contacts__link--mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
       </li>
-      <ul class="menu-social">
-        <li class="menu-social__item">
-          <a class="menu-social__link">Instagram</a>
-        </li>
-        <li class="menu-social__item">
-          <a class="menu-social__link">Twitter</a>
-        </li>
-        <li class="menu-social__item">
-          <a class="menu-social__link">Facebook</a>
-        </li>
-        <li class="menu-social__item">
-          <a class="menu-social__link">LinkedIn</a>
-        </li>
       </ul>
+    <ul class="menu-social">
+      <li class="menu-social__item">
+        <a class="menu-social__link">Instagram</a>
+      </li>
+      <li class="menu-social__item">
+        <a class="menu-social__link">Twitter</a>
+      </li>
+      <li class="menu-social__item">
+        <a class="menu-social__link">Facebook</a>
+      </li>
+      <li class="menu-social__item">
+        <a class="menu-social__link">LinkedIn</a>
+      </li>
+    </ul>
   </div>
 
   <script defer src="js/mobile-menu.js"></script>
@@ -618,6 +623,7 @@
     integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
     crossorigin="anonymous"></script>
   <script src="./js/modal.js"></script>
+  
 </body>
 
 </html>

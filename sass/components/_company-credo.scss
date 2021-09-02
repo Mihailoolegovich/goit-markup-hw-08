@@ -3,6 +3,11 @@
 .company-credo {
   // padding: 94px 0; Desctop
   padding: 60px 0;
+  @media screen and (min-width: 1200px) {
+    & {
+      padding: 94px 0;
+    }
+  }
 }
 
 .credo {
@@ -26,13 +31,12 @@
   // width: 270px;
   /* height: 101px;*/
 
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
-
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     & {
       max-width: 450px;
+    }
+    &:not(:last-child) {
+      margin-bottom: 30px;
     }
   }
 
@@ -40,6 +44,12 @@
     & {
       width: calc((100% - 4 * 15px) / 2);
 
+      margin: 15px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    & {
+      width: calc((100% - 8 * 15px) / 4);
       margin: 15px;
     }
   }
@@ -59,18 +69,29 @@
       width: 354px;
     }
   }
+  @media screen and (min-width: 1200px) {
+    & {
+      width: 270px;
+    }
+  }
 }
 
 .credo__title {
   height: 16px;
   margin-bottom: 10px;
   text-transform: uppercase;
-  text-align: center;
+  text-align: start;
 
   color: $primary-color;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
+
+  @media screen and (max-width: 767px) {
+    & {
+      text-align: center;
+    }
+  }
 }
 
 .credo__text {
