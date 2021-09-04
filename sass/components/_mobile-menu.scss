@@ -29,7 +29,8 @@
 }
 
 .menu-container {
-  //   opacity: 0;
+  // opacity: 0;
+  // display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -37,16 +38,19 @@
   height: 100vh;
   padding: 48px 40px;
   background-color: $primary-white-color;
-  transform: translateX(100%);
+  overflow-y: scroll;
+  transform: translate(100%);
 
   transition: transform $transition-duration-timing;
   z-index: 999;
-}
 
-.menu-container.is-open {
-  transform: translateX(0);
-  //   opacity: 1;
-  //   pointer-events: none;
+  &.is-open {
+    transform: translate(0);
+    // z-index: 999;
+    // display: inline-block;
+    // opacity: 1;
+    //   pointer-events: none;
+  }
 }
 
 .mobile-menu__close {
