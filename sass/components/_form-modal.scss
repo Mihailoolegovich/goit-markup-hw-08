@@ -26,7 +26,7 @@
   transform: translate(-50%, -50%);
   // min-width: 528px;
   // min-height: 581px;
-  min-width: 450px;
+  min-width: 320px;
   min-height: 609px;
   padding: 40px;
   box-shadow: $shadow-cards-index;
@@ -35,12 +35,12 @@
   background-color: #fff;
   transition: opacity $transition-duration-timing;
 
-  // @media screen and (min-width: 480px) {
-  //   & {
-  //     min-width: 450px;
-  //     min-height: 609px;
-  //   }
-  // }
+  @media screen and (min-width: 480px) {
+    & {
+      min-width: 450px;
+      min-height: 609px;
+    }
+  }
   @media screen and (min-width: 1200px) {
     & {
       min-width: 528px;
